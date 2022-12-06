@@ -21,4 +21,5 @@
 </IfModule>
 <IfModule Litespeed>
     CacheEngine on
+    CacheLookup on
 </IfModule>
