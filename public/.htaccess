@@ -11,7 +11,7 @@
     RewriteEngine On
 
     RewriteCond %{HTTP_HOST} test.xuchengen.eu.org [NC]
-    RewriteCond %{REQUEST_URI} !^/(?i)zh-(CN|TW|HK|MO|MY|SG|CHS|CHT|Hant|Hans)/?
+    RewriteCond %{REQUEST_URI} !^\/(?i)zh-(CN|TW|HK|MO|MY|SG|CHS|CHT|Hant|Hans)\/?
     RewriteRule ^(.*)$ https://www.qoole.cc/$1 [L,R=301]
 
     # 处理认证头
