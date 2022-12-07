@@ -10,6 +10,9 @@
 
     RewriteEngine On
 
+    RewriteCond %{HTTP_HOST} test.xuchengen.eu.org [NC]
+    RewriteRule https://www.qoole.cc/ [L,R=301]
+
     # 处理认证头
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
