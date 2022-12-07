@@ -70,7 +70,7 @@ class LanguagePreMiddleware
                     }
                 }
             } else {
-                $lang = self::LANGS[$lang];
+                $lang = self::LANGS[strtoupper($lang)];
             }
         } else {
             // url中包含语言变量则写入cookie
