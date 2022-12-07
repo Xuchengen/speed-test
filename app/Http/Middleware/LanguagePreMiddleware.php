@@ -5,7 +5,6 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
-use Illuminate\Support\Facades\URL;
 
 /**
  * 前置语言中间件
@@ -70,10 +69,10 @@ class LanguagePreMiddleware
                     }
                 }
             } else {
-                $lang = self::LANGS[strtoupper($lang)];
+                $lang = self::LANGS[$lang];
             }
         } else {
-            // url中包含语言变量则写入cookie
+            $lang = self::LANGS[strtoupper($lang)];
             $writeLangCookie = true;
         }
 
