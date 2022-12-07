@@ -15,7 +15,7 @@ php artisan optimize
 php artisan view:cache
 
 # 创建软连接
-ln -s ~/repositories/speed-test ~/public_html2
+ln -s ~/repositories/speed-test/public ~/public_html2
 
 # 开启服务
 php artisan up
