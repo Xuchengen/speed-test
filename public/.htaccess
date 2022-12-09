@@ -1,4 +1,9 @@
 <IfModule mod_rewrite.c>
+
+    <IfModule lsapi_module>
+        lsapi_enable_user_ini On
+    </IfModule>
+
     <IfModule Litespeed>
         CacheEngine on
         CacheLookup on
