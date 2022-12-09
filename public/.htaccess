@@ -1,4 +1,8 @@
 <IfModule mod_rewrite.c>
+    <IfModule lsapi_module>
+       php_flag opcache.enable Off
+    </IfModule>
+
     <IfModule Litespeed>
         CacheEngine on
         CacheLookup on
