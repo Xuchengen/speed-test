@@ -1,14 +1,4 @@
 <IfModule mod_rewrite.c>
-
-    <IfModule lsapi_module>
-        AddType application/x-httpd-lsphp .php
-        lsapi_enable_user_ini On
-        lsapi_user_ini_homedir On
-        lsapi_process_phpini On
-        lsapi_mod_php_behaviour Off
-        lsapi_debug Off
-    </IfModule>
-
     <IfModule Litespeed>
         CacheEngine on
         CacheLookup on
